@@ -3,7 +3,7 @@
 #define STACK_SIZE 100
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 typedef struct stack_s
 {
         int n;
@@ -23,5 +23,6 @@ void free_stack(stack_t **stack);
 void nop(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
+void exec_inst(FILE *file, stack_t **stack);
 
 #endif
